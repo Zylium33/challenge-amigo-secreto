@@ -26,6 +26,16 @@ function agregarAmigo() {
     console.log(amigos);
 }
 
-function tieneNumero(caca) {
-    return /\d/.test(caca);
+//Detecta si pones un numero 
+function tieneNumero(texto) {
+    return /\d/.test(texto);
+}
+
+function sortearAmigo() {
+    //Calcula un numero en vase aleatorio en base al tamaño del array
+    let aleatorio = Math.floor(Math.random()*amigos.length);
+    let amigoSecreto = amigos[aleatorio];
+    let ganador = document.createElement("li");
+    ganador.textContent = amigoSecreto;
+    document.getElementById("resultado").append(ganador);
 }

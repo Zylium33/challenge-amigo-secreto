@@ -12,6 +12,7 @@ function agregarAmigo() {
         alert("No se pueden ingresar numeros");
         return;
     }
+    amigo = amigo.charAt(0).toUpperCase() + amigo.slice(1).toLowerCase();
     amigos.push(amigo);
     
     //Crea el elemento visual de la lista 
@@ -32,10 +33,12 @@ function tieneNumero(texto) {
 }
 
 function sortearAmigo() {
+    document.getElementById("resultado").innerHTML = ""; 
+
     //Calcula un numero en vase aleatorio en base al tamaño del array
     let aleatorio = Math.floor(Math.random()*amigos.length);
     let amigoSecreto = amigos[aleatorio];
     let ganador = document.createElement("li");
-    ganador.textContent = amigoSecreto;
+    ganador.textContent = `El amigo secreto es: "${amigoSecreto}"`;
     document.getElementById("resultado").append(ganador);
-}
+    }

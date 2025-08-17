@@ -12,19 +12,29 @@ function agregarAmigo() {
         alert("No se pueden ingresar numeros");
         return;
     }
+    
     amigo = amigo.charAt(0).toUpperCase() + amigo.slice(1).toLowerCase();
     amigos.push(amigo);
     
-    //Crea el elemento visual de la lista 
-    let nuevoLi = document.createElement("li");
-    nuevoLi.textContent = amigo;
-    document.getElementById("listaAmigos").appendChild(nuevoLi);
-    
+    actualizarLista();
+
     //Limpia el input
     document.getElementById("amigo").value = "";    
     //Mantiene el cursor en el input
     document.getElementById("amigo").focus();    
     console.log(amigos);
+}
+
+//Crea el elemento visual de cada amigo
+function actualizarLista() {
+    let lista = document.getElementById("listaAmigos");
+    lista.innerHTML = "";
+
+    for (let i = 0; i < amigos.length; i++) {
+        let nuevoLi = document.createElement("li");
+        nuevoLi.textContent = amigos[i];
+        lista.appendChild(nuevoLi);
+    }
 }
 
 //Detecta si pones un numero 
@@ -41,4 +51,4 @@ function sortearAmigo() {
     let ganador = document.createElement("li");
     ganador.textContent = `El amigo secreto es: "${amigoSecreto}"`;
     document.getElementById("resultado").append(ganador);
-    }
+ }

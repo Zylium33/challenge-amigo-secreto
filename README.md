@@ -23,14 +23,14 @@ Perfecta para fiestas navideñas, cumpleaños o cualquier intercambio de regalos
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
 ### Detalles Tecnicos:
-- **JavaScript Vainilla** - Sin dependencias externas
-- **Manipulación del DOM** - Creación dianámica de elementos
+- **JavaScript Vanilla** - Sin dependencias externas
+- **Manipulación del DOM** - Creación dinámica de elementos
 - **Arrays y funciones** - Gestion eficiente de datos
 - **Expresiones regulares** - Para validacion de entrada
 
 ## 🚀 Cómo Usar 
 
-### Eejecutar localmente 
+### Ejecutar localmente 
 1. Clona este repositorio:
    ```bash
    git clone https://github.com/Zylium33/challenge-amigo-secreto.git

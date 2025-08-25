@@ -4,6 +4,10 @@
 Aplicación web interactiva para realizar sorteos de amigo secreto de forma rápida y facil. 
 Perfecta para fiestas navideñas, cumpleaños o cualquier intercambio de regalos.
 
+## 📸 Demo
+
+![Demo del Amigo Secreto](./assets/demo.gif)
+
 ## ✨ Características
 
 - ✅ **Agregar participantes** - Añade nombres de forma dinamica a la lista
